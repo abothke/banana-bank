@@ -3,7 +3,7 @@ import './bananabank.css'
 import logo from '../../img/logo.png'
 import card from '../../img/bbcard.png'
 
-const BananaBank = ({accountBalance, setAccountBalance}) => {
+const BananaBank = () => {
     const [accountData, setAccountData] = useState({
         entryValue: '',
         accountBalance: 0
@@ -18,6 +18,7 @@ const BananaBank = ({accountBalance, setAccountBalance}) => {
                 entryValue: inputValue,
                 accountBalance: accountData.accountBalance - Number(inputValue)
             })
+            console.log(accountData);
         } else {
             setAccountData({
                 ...accountData,
@@ -36,7 +37,7 @@ const BananaBank = ({accountBalance, setAccountBalance}) => {
                 <img src={card} alt="" />
                 <h4>IBAN DE 1234 1234 1234 00</h4>
                 <div id="accountDetails">
-                    <div id="balance">
+                    <div id="showBalance">
                     <p>Kontostand</p>
                            <h2 id="accountBalance">{accountData.accountBalance} EUR</h2>
                     </div>
