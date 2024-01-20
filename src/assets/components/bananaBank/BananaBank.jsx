@@ -32,16 +32,19 @@ const BananaBank = () => {
         <form>
             <div id="bankAccount">
                 <p>Willkommen, Herr Banane!</p>
+                <div id="accountPositions">
                 <h3>Girokonto</h3>
-                <img src={card} alt="" />
-                <h4>IBAN DE 1234 1234 1234 00</h4>
+                <h3>Kontostand</h3>
+                </div>
                 <div id="accountDetails">
-                    <div id="showBalance">
-                    <p>Kontostand</p>
-                           <h2 id="accountBalance">{accountData.accountBalance} EUR</h2>
+                    <div id="accountInfo">
+                    <img src={card} alt="" />
+                    <p>IBAN DE 1234 1234 1234 00</p>
                     </div>
-                
-            </div>
+                        <div id="showBalance">
+                        <h2 id="accountBalance">{accountData.accountBalance} EUR</h2>
+                        </div>
+                </div>
             </div>
             <input
             type="number"
