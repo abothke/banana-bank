@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+form{
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 1em;
+    border-radius: 10px;
+    color: #080C18;
+    background-color: #e0e1d9;
+    width: 40vw;
+}
+
+h1, h2{
+    font-weight: 400;
+}
+
+input{
+    background: #080C18;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    width: 60%;
+    height: 20px;
+    text-align: center;
+}
+
+::placeholder{
+    color: aliceblue;
+    text-align: center;
+}
+
+button{
+    background: #080C18;
+    width: 50%;
+}
+
+#accountDetails{
+    color: #080C18;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+}
+
+#bankAccount{
+    background-color: #F3F6E7;
+    padding: 2em;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+img{
+    width: 200px;
+}
+
+#buttons{
+    display: flex;
+    gap: 2em;
+}
