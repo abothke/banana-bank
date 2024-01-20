@@ -18,7 +18,6 @@ const BananaBank = () => {
                 entryValue: inputValue,
                 accountBalance: accountData.accountBalance - Number(inputValue)
             })
-            console.log(accountData);
         } else {
             setAccountData({
                 ...accountData,
